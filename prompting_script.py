@@ -1,10 +1,15 @@
 # python script that reads expertqa json file and writes to a csv file
 
-import json
+import os
+from json_parser import parse_jsonl_for_fields
 import csv
 import openai
 
-openai.api_key = 'OPENAI_API_KEY'
+# api key, set env key with export OPENAI_API_KEY='your_api_key_here'
+
+openai.api_key = os.getenv('OPENAI_API_KEY')
+if not openai.api_key:
+    raise ValueError("API key is not set. Please set the OPENAI_API_KEY environment variable.")
 
 # Define the fields of interest
 fields_of_interest = ["Healthcare / Medicine", "Law"]
@@ -20,9 +25,17 @@ with open('output.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(["Question", "Answer"])  # Write header
     for question in questions:
-        response = openai.Completion.create(
-          engine="gpt-3.5-turbo",
-          prompt=question,
-          max_tokens=100
-        )
-        writer.writerow([question, response.choices[0].text.strip()])
+        try:
+            response = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo",
+                messages=[
+                    {"role": "user", "content": question}
+                ],
+                max_tokens=100
+            )
+            print(response.choices[0].text.strip())
+            answer = response['choices'][0]['message']['content'].strip() if response['choices'] else "No answer"
+            writer.writerow([question, answer])
+        except Exception as e:
+            print(f"An error occurred: {e}")
+
