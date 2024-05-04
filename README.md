@@ -136,7 +136,7 @@ The llmproject leverages various NLP models to  evaluate model performance withi
 
 | File                                                                                                                                                         | Summary                                                                                                                                                                                                                |
 | ---                                                                                                                                                          | ---                                                                                                                                                                                                                    |
-| [Cleaned Evaluation Bleu Scores.ipynb](https://github.com/mshroff123/llmproject/blob/master/bleu_results/Cleaned Evaluation Bleu Scores.ipynb)               | Insert here                                                                  |
+| [Cleaned Evaluation Bleu Scores.ipynb](https://github.com/mshroff123/llmproject/blob/master/bleu_results/Cleaned Evaluation Bleu Scores.ipynb)               | Implemented evaluation for smoothed bleu score and included code for all bleu score related graphs.                                                               |
 
 
 </details>
