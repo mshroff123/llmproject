@@ -29,13 +29,7 @@
 > - [ Features](#-features)
 > - [ Repository Structure](#-repository-structure)
 > - [ Modules](#-modules)
-> - [ Getting Started](#-getting-started)
->   - [ Installation](#-installation)
->   - [ Running llmproject](#-running-llmproject)
->   - [ Tests](#-tests)
-> - [ Project Roadmap](#-project-roadmap)
 > - [ Contributing](#-contributing)
-> - [ License](#-license)
 > - [ Acknowledgments](#-acknowledgments)
 
 ---
@@ -55,7 +49,6 @@ The llmproject leverages various NLP models to  evaluate model performance withi
 | 📄 | **Documentation** | Along with this ReadMe, this project contains documentation in the form of a research paper that can be found here. |
 | 🔌 | **Integrations**  | Key integrations include Hugging Face Transformers for model management, NLTK for BLEU score calculation, and PyTorch for model quantization and inference. External dependencies consist of handling JSON and JSONL files with Python's built-in JSON library. |
 | 🧩 | **Modularity**    | The codebase is structured with clear separation into two main directories: `generation_code` for model operations and `eval_code` for evaluation metrics. Rest of the directories contain results and outputs. |
-| ⚡️  | **Performance**   | The project is optimized for performance in tasks such as model inference and metric calculation. Efficient handling of large datasets and model outputs ensures robust performance across various computational environments. |
 | 📦 | **Dependencies**  | Dependencies include Python libraries such as `transformers`, `torch`, `pandas`, `nltk`, and `matplotlib` for data processing, model management, and visualization. The setup requires handling various data formats and integrating multiple machine learning and NLP models. |
 
 
@@ -66,7 +59,6 @@ The llmproject leverages various NLP models to  evaluate model performance withi
 ```sh
 └── llmproject/
     ├── LLM Plots cosine_and_bert
-    │   ├── .DS_Store
     │   ├── bertscore_across_all_models.png
     │   ├── bertscore_across_question_type.png
     │   ├── bertscore_across_specific_field.png
@@ -84,7 +76,6 @@ The llmproject leverages various NLP models to  evaluate model performance withi
     │   ├── smoothed_bleu_score_gpt.csv
     │   └── smoothed_bleu_score_medicalchatbot.csv
     ├── cosine_bert_with_question_types
-    │   ├── .DS_Store
     │   ├── biomistral_bert_score_types.csv
     │   ├── biomistral_cosine_similarity_types.csv
     │   ├── gpt_cosine_similarity.csv
@@ -94,7 +85,6 @@ The llmproject leverages various NLP models to  evaluate model performance withi
     │   ├── mistral_bert_score_types.csv
     │   └── mistral_cosine_similarity_types.csv
     ├── cosine_bert_without_question_types
-    │   ├── .DS_Store
     │   ├── biomistral_bert_score.csv
     │   ├── biomistral_cosine_similarity.csv
     │   ├── gpt_bert_score 2.44.52 PM.csv
@@ -115,7 +105,6 @@ The llmproject leverages various NLP models to  evaluate model performance withi
     └── model_outputs
         ├── biomistral.json
         ├── gpt.json
-        ├── json_parser.py
         ├── medical_chatbot.json
         └── mistral.json
 ```
@@ -211,7 +200,5 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 - Hugging Face for their Transformers library.
 
 - Insert Papers and References here (i.e. BERTScore, BLEU Score, etc.)
-
-[**Return**](#-quick-links)
 
 ---
