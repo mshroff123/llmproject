@@ -145,7 +145,7 @@ The llmproject leverages various NLP models to  evaluate model performance withi
 
 | File                                                                                                                                | Summary                                                                                                                                                                         |
 | ---                                                                                                                                 | ---                                                                                                                                                                             |
-| [Bleu Eval Graphs.ipynb](https://github.com/mshroff123/llmproject/blob/master/eval_code/Bleu Eval Graphs.ipynb)                     | Summary: Insert Here |
+| [Bleu Eval Graphs.ipynb](https://github.com/mshroff123/llmproject/blob/master/eval_code/Bleu Eval Graphs.ipynb)                     | Summary: Implemented evaluation for smoothed bleu score and included code for all bleu score related graphs.|
 | [LLM_Evaluation_Cosine_BERT.ipynb](https://github.com/mshroff123/llmproject/blob/master/eval_code/LLM_Evaluation_Cosine_BERT.ipynb) | Insert here   |
 
 </details>
