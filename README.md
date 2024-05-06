@@ -146,7 +146,7 @@ The llmproject leverages various NLP models to  evaluate model performance withi
 | File                                                                                                                                | Summary                                                                                                                                                                         |
 | ---                                                                                                                                 | ---                                                                                                                                                                             |
 | [Bleu Eval Graphs.ipynb](https://github.com/mshroff123/llmproject/blob/master/eval_code/Bleu Eval Graphs.ipynb)                     | Summary: Implemented evaluation for smoothed bleu score and included code for all bleu score related graphs.|
-| [LLM_Evaluation_Cosine_BERT.ipynb](https://github.com/mshroff123/llmproject/blob/master/eval_code/LLM_Evaluation_Cosine_BERT.ipynb) | Insert here   |
+| [LLM_Evaluation_Cosine_BERT.ipynb](https://github.com/mshroff123/llmproject/blob/master/eval_code/LLM_Evaluation_Cosine_BERT.ipynb) | Implemented evaluation for cosine similarity, BERTScore, and includes code for all related graphs.   |
 
 </details>
 
@@ -199,6 +199,19 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 - OpenAI for their GPT 3.5 model.
 - Hugging Face for their Transformers library.
 
-- Insert Papers and References here (i.e. BERTScore, BLEU Score, etc.)
+##  References
+Alexander R. Fabbri, Chien-Sheng Wu, Wenhao Liu, Caiming Xiong (2022). QAFactEval: Improved QA-Based Factual Consistency Evaluation for Summary. Preprint. arXiv. https://doi.org/10.48550/arXiv.2112.08542. 
+
+
+Chaitanya Malaviya, Subin Lee, Sihao Chen, Elizabeth Sieber, Mark Yatskar, Dan Roth (2024). EXPERTQA : Expert-Curated Questions and Attributed Answers. Preprint. arXiv. https://doi.org/10.48550/arXiv.2309.07852.
+
+
+Debadutta Dash, Rahul Thapa, Juan M. Banda, Akshay Swaminathan, Morgan Cheatham, Mehr Kashyap, Nikesh Kotecha, Jonathan H. Chen, Saurabh Gombar, Lance Downing, Rachel Pedreira, Ethan Goh, Angel Arnaout, Garret Kenn Morris, Honor Magon, Matthew P Lungren, Eric Horvitz, Nigam H. Shah (2023). Evaluation of GPT-3.5 and GPT-4 for supporting real-world information needs in healthcare delivery. Preprint. arXiv. https://doi.org/10.48550/arXiv.2304.13714.
+
+
+Liyan Tang, Zhaoyi Sun, Betina Idnay, Jordan G. Nestor, Ali Soroush, Pierre A. Elias, Ziyang Xu, Ying Ding, Greg Durrett, Justin F. Rousseau, Chunhua Weng, Yifan Peng (2023). Evaluating Large Language Models on Medical Evidence Summarization. npj Digit. Med. 6, 158. https://doi.org/10.1038/s41746-023-00896-7.
+
+
+Tianyi Zhang, Varsha Kishore, Felix Wu, Kilian Q. Weinberger, Yoav Artzi (2020). BERTScore: Evaluating Text Generation With BERT. Preprint. arXiv. https://doi.org/10.48550/arXiv.1904.09675.
 
 ---
